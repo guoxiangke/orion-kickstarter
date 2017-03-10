@@ -1,0 +1,48 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/live-chat.css")
+
+block content
+  .live-chat
+    .banner
+      img(src="./images/live-chat/banner.jpg")
+      .banner-text
+        .h6 The Intercom Product for Live Chat
+        h1.h1 Every website visitor is a sales opportunity. Chat and convert them to customers.
+        form(actions="")
+          .clearfix.home-form
+            input(type="text", name="", placeholder="Enter your emial")
+            button.btn.btn-primary(type="submit") Get Started
+        .video-btn WATCH THE VIDEO
+    .section
+      .chat-width-visitor.p20 
+        img(src="./images/live-chat/1.svg")
+        h3.h3 Chat with visitors on your website in real-time, capture leads, and continue conversations by email if they leave.
+        .chat-grid
+          .grid-box
+            include ../images/live-chat/target.svg
+            .grid-title Targeted live chat
+          .grid-box
+            include ../images/live-chat/track.svg
+            .grid-title Lead tracking
+          .grid-box
+            include ../images/live-chat/team.svg
+            .grid-title Team inbox
+      .trial-form
+        h2.h1.tx-red Try it free for 14 days
+        form(actions="")
+          .clearfix.home-form
+            input(type="text", name="", placeholder="Enter your emial")
+            button.btn.btn-primary(type="submit") Get Started
+        span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
+        .join
+          .join-info Join thousands of businesses who use intercom to Acquire new customers
+          img(src="./images/live-chat/logos.png")
+    .bubble-box
+    .overview.section
+      .title 
+        img(src="./images/live-chat/overview.png", width="512")
+      .welcome 
+        .h6 welcome
+        h2.h1 Always open and available to help

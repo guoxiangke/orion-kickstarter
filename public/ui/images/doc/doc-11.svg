@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" stroke="#818a97">
+  <g id="comms-video" stroke-width="2" fill="none" fill-rule="evenodd">
+    <path d="M29 33H11V15h18v7l8-5v14l-8-5v7z" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M47 24c0 12.703-10.297 23-23 23C11.298 47 1 36.704 1 24 1 11.3 11.298 1 24 1c12.703 0 23 10.3 23 23z"></path>
+  </g>
+</svg>

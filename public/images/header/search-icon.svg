@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <circle class="cls-1" cx="25" cy="25" r="25" style="fill: #7e61ea"></circle>
+  <circle class="cls-2" cx="25" cy="25" r="4" style="fill: #fff"></circle>
+  <path class="cls-2" d="M16,15a1,1,0,0,1-1-1h0a1,1,0,0,1,1-1H35V11H16a3,3,0,0,0-3,3V36a2,2,0,0,0,2,2H37V15Zm15.3,17.75L28.45,29.9a6,6,0,1,1,1.42-1.41l2.85,2.85Z" style="fill: #fff"></path>
+</svg>

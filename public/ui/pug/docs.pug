@@ -1,0 +1,34 @@
+extends common/doc-layout.pug
+
+block main
+  header.docs-header
+    .doc-container
+      .header-container
+        a.logo(href='#')
+          img(src='./images/doc/logo.png')
+        .headline Advice and answers from the Intercom Team
+        form.search
+          input(type='text', autocomplete='off', placeholder='Search for answers...')
+          button(type='submit')
+
+  section.docs-list
+    .doc-container
+      - var n = 0
+      while n++ < 17
+        a.doc-card(href='#')
+          .icon
+            img(src=`./images/doc/doc-${n}.svg`)
+          .content-area
+            .title Install on your product or site
+            .desc Easy steps to setting up Intercom on any platform.
+            .info
+              .avatar
+                img(src='./images/doc/person-1.jpg')
+                img(src='./images/doc/person-2.png')
+              .text
+                span.dark 11 articles in this collection
+                br
+                | Written by
+                span.dark  Zara Burke
+                |  and
+                span.dark  Ruairí Galavan

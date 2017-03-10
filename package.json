@@ -1,0 +1,25 @@
+{
+  "name": "www.51chat",
+  "version": "1.0.0",
+  "description": "meteor orion site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loongmxbt/orion-kickstarter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loongmxbt/orion-kickstarter/issues"
+  },
+  "homepage": "https://github.com/loongmxbt/orion-kickstarter#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "bcrypt": "^1.0.2",
+    "common": "^0.2.5",
+    "jquery": "^2.1.4"
+  }
+}

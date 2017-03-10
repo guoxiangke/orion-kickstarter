@@ -9,33 +9,43 @@ mobile-experience@1.0.4       # Packages for a great mobile UX
 mongo@1.1.15                   # The database Meteor supports right now
 blaze-html-templates    # Compile .html files into Meteor Blaze views
 session@1.1.7                 # Client-side reactive dictionary for your app
-jquery@1.11.10                  # Helpful client-side library
+
 tracker@1.1.2                 # Meteor's client-side reactive programming library
 
 es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
 ecmascript@0.6.3              # Enable ECMAScript2015+ syntax in app code
+
+# standard libraries
+#jquery@1.11.10
+#underscore@1.0.10
+less@2.7.8
 
 ## Orion
 orionjs:core
 orionjs:pages
 
 ## Styles
-twbs:bootstrap 
-fortawesome:fontawesome 
-orionjs:bootstrap
+fortawesome:fontawesome
+#orionjs:bootstrap
+#twbs:bootstrap
+nicolaslopezj:orion-admin-only-bootstrap
 
 ## Router
-kadira:flow-router 
+kadira:flow-router
 kadira:blaze-layout
+
+##Attributes
 
 ## Files
 orionjs:filesystem
-vsivsi:orion-file-collection 
+vsivsi:orion-file-collection
 orionjs:file-attribute
 orionjs:image-attribute
 
 ## Editor
 orionjs:summernote
+malkesh:trumbowyg
+#froala:editor #https://www.froala.com/wysiwyg-editor https://atmospherejs.com/froala/editor
 
 ## i18n
 loongmxbt:orion-lang-zh-cn
@@ -44,7 +54,11 @@ loongmxbt:orion-lang-zh-cn
 msavin:mongol
 
 ## Export
-nicolaslopezj:orion-exporter 
+nicolaslopezj:orion-exporter
+
 standard-minifier-css
 standard-minifier-js
 shell-server
+
+nicolaslopezj:orion-ga
+orionjs:froala

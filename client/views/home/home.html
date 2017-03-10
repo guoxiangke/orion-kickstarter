@@ -1,13 +1,121 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+
 <template name="home">
-
-  <div class="container">
-    
-    <h1>{{dict 'site.desc'}}</h1>
-
-    <hr>
-  
-    {{> postsList}}
-
+{{> postsList}}
+  <div class="wrapper">
+    <div class="home">
+      <div class="bg-box hidden-xs">
+        <div class="left-bg"></div>
+        <div class="right-bg"></div>
+      </div>
+      <div class="content-wrapper">
+        <div class="communication-way">
+          <div class="way old-way">
+            <h1 class="h2">{{ dict 'homepage.p1' }}</h1><img src="./images/index/1.png">
+          </div>
+          <div class="way new-way"><img class="hidden-xs" src="./images/index/2.png">
+            <h2 class="h2">{{ dict 'homepage.p2' }}</h2>
+            <form actions="">
+              <div class="clearfix home-form">
+                <input type="text" name="" placeholder="{{ dict 'homepage.p3' }}">
+                <button class="btn btn-primary" type="submit">{{ dict 'homepage.p4' }}</button>
+              </div>
+            </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span><img class="visible-xs img-mobile" src="./images/index/2.png">
+          </div>
+        </div>
+        <div class="products">
+          <h1 class="h1">Meet our products</h1>
+          <div class="info h5">We make customer messaging products for sales, marketing, and support teams, connected on one platform.</div>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12"><a class="title acquire" href="#"><img src="./images/header/acquire.svg"><span class="h2">Acquire</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/3.jpg"><img class="mouse-in" src="./images/index/4.jpg"></a>
+              <div class="detail">
+                <h3 class="h3">Website live chat</h3>
+                <p>Chat with website visitors in real-time, capture leads, and continue conversations by email.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12"><a class="title engage" href="#"><img src="./images/header/engage.svg"><span class="h2">Engage</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/5.jpg"><img class="mouse-in" src="./images/index/6.jpg"></a>
+              <div class="detail">
+                <h3 class="h3">Customer engagement</h3>
+                <p>Send targeted messages to onboard users, make announcements, and re-engage people.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer">
+          <h1 class="h2">Provide personal customer support at scale</h1>
+          <div class="info h5">Everything your team needs to solve customer problems faster with an integrated knowledge base and help desk.</div><a class="btn btn-primary" href="#">Learn More</a>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12"><a class="title educate" href="#"><img src="./images/header/search-icon.svg"><span class="h2 educate">Educate</span></a><img class="visible-xs mobile-img" src="./images/index/m1.jpg">
+              <div class="detail visible-xs">
+                <h3 class="h3">Knowledge base</h3>
+                <p>Let customers help themselves with a knowledge base that constantly improves.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12"><a class="title resolve" href="#"><img src="./images/header/question-icon.svg"><span class="h2">Resolve</span></a><img class="visible-xs mobile-img" src="./images/index/m2.jpg">
+              <div class="detail visible-xs">
+                <h3 class="h3">Help desk</h3>
+                <p class="resolve-para">Manage customer requests for help across all channels and respond faster with a modern help desk.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="row customer-img hidden-xs">
+            <div class="col-xs-12"><a href="#"><img class="mouse-out" src="./images/index/8.jpg"><img class="mouse-in" src="./images/index/7.jpg"></a></div>
+          </div>
+          <div class="row hidden-xs">
+            <div class="col-sm-6 col-xs-12">
+              <div class="detail">
+                <h3 class="h3">Knowledge base</h3>
+                <p>Let customers help themselves with a knowledge base that constantly improves.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="detail">
+                <h3 class="h3">Help desk</h3>
+                <p class="resolve-para">Manage customer requests for help across all channels and respond faster with a modern help desk.</p>
+                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="platform">
+          <div class="row">
+            <div class="platform-brief">
+              <h2 class="h1">The Intercom Platform</h2>
+              <div class="info">All of our products work together in one place, powered by live customer data.</div>
+            </div>
+            <div class="platform-img"><img src="./images/index/9.png">
+              <div class="text-box">
+                <div class="text">See who your customers are<br> and what they do in your app, for free.</div>
+                <div class="more-box"><a class="btn" href="#">Learn More</a><span>FREE FOREVER</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="free-trial">
+        <div class="trial-form">
+          <h2 class="h1 tx-blue">Start Your Free Trial</h2>
+          <form actions="">
+            <div class="clearfix home-form">
+              <input type="text" name="" placeholder="Enter your emial">
+              <button class="btn btn-primary" type="submit">Get Started</button>
+            </div>
+          </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span>
+          <div class="join"> <img src="./images/index/logos.png" width="688">
+            <div class="join-info">15,000 customers and counting. Helping the very best web & mobile businesses communicate with their customers.</div>
+            <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 </template>

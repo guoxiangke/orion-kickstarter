@@ -1,0 +1,127 @@
+extends common/layout.pug
+
+block css
+  link(rel="stylesheet" href="./css/index.css")
+
+block content
+  .home
+    .bg-box.hidden-xs
+      .left-bg
+      .right-bg
+    .content-wrapper
+      .communication-way
+        .way.old-way
+          h1.h2 Communicating with customers shouldn't be this hard.
+          img(src="./images/index/1.png")
+        .way.new-way
+          img.hidden-xs(src="./images/index/2.png")
+          h2.h2 With Intercom it’s simple, personal, and fun for everyone.
+          form(actions="")
+            .clearfix.home-form
+              input(type="text", name="", placeholder="Enter your emial")
+              button.btn.btn-primary(type="submit") Get Started
+          span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
+          img.visible-xs.img-mobile(src="./images/index/2.png")
+      .products
+        h1.h1 Meet our products
+        .info.h5 We make customer messaging products for sales, marketing, and support teams, connected on one platform.
+        .row
+          .col-sm-6.col-xs-12
+            a(href="#").title.acquire
+              img(src="./images/header/acquire.svg")
+              span.h2 Acquire
+            a(href="#").img-box
+              img.mouse-out(src="./images/index/3.jpg")
+              img.mouse-in(src="./images/index/4.jpg")
+            .detail
+              h3.h3 Website live chat
+              p Chat with website visitors in real-time, capture leads, and continue conversations by email.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+          .col-sm-6.col-xs-12
+            a(href="#").title.engage
+              img(src="./images/header/engage.svg")
+              span.h2 Engage
+            a(href="#").img-box
+              img.mouse-out(src="./images/index/5.jpg")
+              img.mouse-in(src="./images/index/6.jpg")
+            .detail
+              h3.h3 Customer engagement
+              p Send targeted messages to onboard users, make announcements, and re-engage people.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+      .customer
+        h1.h2 Provide personal customer support at scale
+        .info.h5 Everything your team needs to solve customer problems faster with an integrated knowledge base and help desk.
+        a.btn.btn-primary(href="#") Learn More
+        .row
+          .col-sm-6.col-xs-12
+            a.title.educate(href="#")
+              img(src="./images/header/search-icon.svg")
+              span.h2.educate Educate
+            img.visible-xs.mobile-img(src="./images/index/m1.jpg")
+            .detail.visible-xs
+              h3.h3 Knowledge base
+              p Let customers help themselves with a knowledge base that constantly improves.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+          .col-sm-6.col-xs-12
+            a.title.resolve(href="#")
+              img(src="./images/header/question-icon.svg")
+              span.h2 Resolve
+            img.visible-xs.mobile-img(src="./images/index/m2.jpg")
+            .detail.visible-xs
+              h3.h3 Help desk
+              p.resolve-para Manage customer requests for help across all channels and respond faster with a modern help desk.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+        .row.customer-img.hidden-xs
+          .col-xs-12
+            a(href="#")
+              img.mouse-out(src="./images/index/8.jpg")
+              img.mouse-in(src="./images/index/7.jpg")
+        .row.hidden-xs
+          .col-sm-6.col-xs-12
+            .detail
+              h3.h3 Knowledge base
+              p Let customers help themselves with a knowledge base that constantly improves.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+          .col-sm-6.col-xs-12
+            .detail
+              h3.h3 Help desk
+              p.resolve-para Manage customer requests for help across all channels and respond faster with a modern help desk.
+              .more
+                a(href="#") Learn more
+                span &nbsp;→
+      .platform
+        .row
+          .platform-brief
+            h2.h1 The Intercom Platform
+            .info All of our products work together in one place, powered by live customer data.
+          .platform-img
+            img(src="./images/index/9.png")
+            .text-box
+              .text See who your customers are<br> and what they do in your app, for free.
+              .more-box
+                a.btn(href="#") Learn More
+                span FREE FOREVER
+    .free-trial
+      .trial-form
+        h2.h1.tx-blue Start Your Free Trial
+        form(actions="")
+          .clearfix.home-form
+            input(type="text", name="", placeholder="Enter your emial")
+            button.btn.btn-primary(type="submit") Get Started
+        span.form-desc Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time
+        .join 
+          img(src="./images/index/logos.png", width="688")
+          .join-info 15,000 customers and counting. Helping the very best web & mobile businesses communicate with their customers.
+          .more
+            a(href="#") Learn more
+            span &nbsp;→

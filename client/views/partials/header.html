@@ -1,27 +1,80 @@
 <template name="header">
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">{{ app_name }}</a>
+
+  <header class="site-header">
+    <div class="site-header-wrap"><a class="logo" href="/"><img src="./images/header/logo.svg" alt="logo"/></a>
+      <div class="mobile-menu">
+        <div class="menu-btn"></div>
+        <div class="triangle"></div>
+        <div class="dropdown-menu">
+          <div class="products">
+            <div class="products-col"><a class="product" href="./live-chat.html">
+                <div class="desc">Website Live Chat</div>
+                <div class="name"><img src="./images/header/acquire.svg" alt="acquire"/><span>Acquire</span></div></a></div>
+          </div>
+          <div class="products mobile-products"><a class="link-box" href="#">
+              <div class="icon-text"><img src="./images/header/search-icon.svg"/><span class="purple">+</span><img src="./images/header/question-icon.svg"/><span class="purple h5">Support Solution</span></div>
+              <div class="desc">Provide customer support at scale with an integrated help desk and knowledge base</div></a></div>
+          <div class="resources"><a class="res" href="#">Pricing</a><a class="res" href="#">Blog</a><a class="res" href="#">Customers</a><a class="res" href="#">Watch a Demo</a><a class="res" href="#">Developers</a><a class="res" href="/doc">Help Center</a><a class="res" href="#">Careers</a></div>
+          <div class="download-apps">
+            <div class="desc">Download Intercom's mobile apps</div>
+            <div class="apps">
+              <div class="app">iOS App</div>
+              <div class="app">Android App</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          {{#if currentUser}}
-          <li><a href="/admin">{{currentUser.profile.name}}</a></li>
-          {{else}}
-		  <li><a href="/admin">Login</a></li>
-          {{/if}}
-        </ul>
+      <div class="right-block">
+        <div class="dropdown">
+          <div class="dropdown-label">Products</div>
+          <div class="dropdown-menu">
+            <div class="products">
+              <div class="products-col"><a class="product" href="./live-chat.html">
+                  <div class="name"><img src="./images/header/acquire.svg" alt="acquire"/><span>Acquire</span></div>
+                  <div class="desc">Chat with website visitors, capture leads, and continue conversations by email</div></a></div>
+              <div class="products-col"><a class="link-box" href="#">
+                  <div class="icon-text"><img src="./images/header/search-icon.svg"/><span class="purple">+</span><img src="./images/header/question-icon.svg"/></div>
+                  <div class="title purple">Support Solution</div>
+                  <div class="desc">Provide customer support at scale with an integrated help desk and knowledge base</div></a><a class="link-box" href="#">
+                  <div class="title blue">All products are built on the Intercom Platform</div>
+                  <div class="desc">Free Forever</div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-label">Resources</div>
+          <div class="dropdown-menu">
+            <div class="resources">
+                <a class="res" href="#">
+                <div class="title">Customers</div>
+                <div class="desc">See how customers like InVision are using Intercom</div></a>
+                <a class="res" href="/docs">
+                <div class="title">Help Center</div>
+                <div class="desc">Learn how to install, configure, and use Intercom's products</div></a>
+
+                <a class="res" href="/docs">
+                <div class="title">Developers</div>
+                <div class="desc">Use our APIs to integrate Intercom with other services</div></a>
+                <a class="res" href="#">
+                <div class="title">Watch a Demo</div>
+                <div class="desc">Learn best practices for using Intercom's products and ask questions</div></a></div>
+          </div>
+        </div>
+        <a class="nav-link" href="#">Blog</a>
+        {{#if currentUser}}
+        <a class="nav-link" href="/admin">{{currentUser.profile.name}}</a>
+        {{else}}
+        <a class="nav-link" href="/admin">Login</a>
+        {{/if}}
+
+        <form class="get-started">
+          <input type="text" placeholder="Enter your email"/>
+          <button type="submit">Get Started</button>
+        </form>
       </div>
-      <!--/.nav-collapse -->
     </div>
-  </nav>
+  </header>
+
+{{ app_name }}
+
 </template>

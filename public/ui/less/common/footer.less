@@ -1,0 +1,112 @@
+@import './variable.less';
+@import './media.less';
+footer {
+  box-sizing: border-box;
+  padding: 55px 20px;
+  a {
+    font-size: 15px;
+    color: @grey;
+    &:hover {
+      text-decoration: none;
+      color: @blue;
+    }
+  }
+  .separate-line {
+    width: 85px;
+    border-top: 1px solid @light-grey;
+    margin: 20px 0;
+  }
+  .footer-new {
+    color: #8da2b5;
+    font-size: 9px;
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: -1px;
+    margin-left: 5px;
+    font-weight: 600;
+    letter-spacing: .05em;
+  }
+  .read-more {
+    margin-top: 20px;
+    a {
+      color: @blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    .link-title {
+      font-size: 13px;
+      color: @blue;
+      margin-bottom: 15px;
+    }
+    .links {
+      width: 20%;
+      box-sizing: border-box;
+      padding-right: 10px;
+      @media (max-width: 850px) {
+        width: 33.33%;
+        &:nth-child(n+4) {
+          margin-top: 40px;
+        }
+        &:last-child {
+          width: 66.66%;
+        }
+      }
+      @media (max-width: 480px) {
+        width: 50%;
+        &:nth-child(n+3) {
+          margin-top: 40px;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      ul {
+        list-style: none;
+        li {
+          &:not(:first-child) {
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 20px;
+    }
+    .copyright-links {
+      width: 80%;
+    }
+    .share-links {
+      width: 20%;
+      a:hover * {
+        fill: @dark-blue;
+      }
+      svg {
+        height: 18px;
+      }
+    }
+    .medium({ display: none; })
+  }
+  .brand {
+    display: none;
+    margin-top: 40px;
+    img {
+      display: block;
+      height: 30px;
+      width: 40px;
+      margin: 0 auto;
+    }
+    .medium({
+      display: block;
+    })
+  }
+}
