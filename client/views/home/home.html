@@ -2,10 +2,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>无忧恰克 | 51chat.net</title>
+  <meta name="description" content="We make customer messaging apps for sales, marketing, and support, connected on one platform. Our mission is to make business personal again.">
+
+  <meta property="og:title" content="Customer Messaging Platform | Intercom" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.intercom.com/" />
+  <meta property="og:image" content="https://marketing.intercomassets.com/assets/social-images/homepage-8b99cf09637e06f3261fd2b22bce4f52a6e305cdacd5308451bd90012adc2665.png" />
+  <meta property="og:description" content="We make customer messaging apps for sales, marketing, and support, connected on one platform. Our mission is to make business personal again." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@intercom" />
+  <meta name="twitter:title" content="Customer Messaging Platform | Intercom" />
+  <meta name="twitter:description" content="We make customer messaging apps for sales, marketing, and support, connected on one platform. Our mission is to make business personal again." />
+  <meta name="twitter:image" content="https://marketing.intercomassets.com/assets/social-images/homepage-8b99cf09637e06f3261fd2b22bce4f52a6e305cdacd5308451bd90012adc2665.png" />
 </head>
 
 <template name="home">
-{{> postsList}}
   <div class="wrapper">
     <div class="home">
       <div class="bg-box hidden-xs">
@@ -24,45 +37,45 @@
                 <input type="text" name="" placeholder="{{ dict 'homepage.p3' }}">
                 <button class="btn btn-primary" type="submit">{{ dict 'homepage.p4' }}</button>
               </div>
-            </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span><img class="visible-xs img-mobile" src="./images/index/2.png">
+            </form><span class="form-desc">{{ dict 'homepage.p5' }} &nbsp;&bullet;&nbsp;{{ dict 'homepage.p6' }}&nbsp;&bullet;&nbsp; {{ dict 'homepage.p7' }}</span><img class="visible-xs img-mobile" src="./images/index/2.png">
           </div>
         </div>
         <div class="products">
-          <h1 class="h1">Meet our products</h1>
-          <div class="info h5">We make customer messaging products for sales, marketing, and support teams, connected on one platform.</div>
+          <h1 class="h1">{{ dict 'homepage.p8' }}</h1>
+          <div class="info h5">{{ dict 'homepage.p9' }}</div>
           <div class="row">
-            <div class="col-sm-6 col-xs-12"><a class="title acquire" href="#"><img src="./images/header/acquire.svg"><span class="h2">Acquire</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/3.jpg"><img class="mouse-in" src="./images/index/4.jpg"></a>
+            <div class="col-sm-6 col-xs-12"><a class="title acquire" href="#"><img src="./images/header/acquire.svg"><span class="h2">获取用户</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/3.jpg"><img class="mouse-in" src="./images/index/4.jpg"></a>
               <div class="detail">
-                <h3 class="h3">Website live chat</h3>
-                <p>Chat with website visitors in real-time, capture leads, and continue conversations by email.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p10' }}</h3>
+                <p>{{ dict 'homepage.p11' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
-            <div class="col-sm-6 col-xs-12"><a class="title engage" href="#"><img src="./images/header/engage.svg"><span class="h2">Engage</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/5.jpg"><img class="mouse-in" src="./images/index/6.jpg"></a>
+            <div class="col-sm-6 col-xs-12"><a class="title engage" href="#"><img src="./images/header/engage.svg"><span class="h2">挖掘用户</span></a><a class="img-box" href="#"><img class="mouse-out" src="./images/index/5.jpg"><img class="mouse-in" src="./images/index/6.jpg"></a>
               <div class="detail">
-                <h3 class="h3">Customer engagement</h3>
-                <p>Send targeted messages to onboard users, make announcements, and re-engage people.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p13' }}</h3>
+                <p>{{ dict 'homepage.p14' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
           </div>
         </div>
         <div class="customer">
-          <h1 class="h2">Provide personal customer support at scale</h1>
-          <div class="info h5">Everything your team needs to solve customer problems faster with an integrated knowledge base and help desk.</div><a class="btn btn-primary" href="#">Learn More</a>
+          <h1 class="h2">{{ dict 'homepage.p24' }}</h1>
+          <div class="info h5">{{ dict 'homepage.p25' }}</div><a class="btn btn-primary" href="#">{{ dict 'homepage.p12' }}</a>
           <div class="row">
-            <div class="col-sm-6 col-xs-12"><a class="title educate" href="#"><img src="./images/header/search-icon.svg"><span class="h2 educate">Educate</span></a><img class="visible-xs mobile-img" src="./images/index/m1.jpg">
+            <div class="col-sm-6 col-xs-12"><a class="title educate" href="#"><img src="./images/header/search-icon.svg"><span class="h2 educate">教育用户</span></a><img class="visible-xs mobile-img" src="./images/index/m1.jpg">
               <div class="detail visible-xs">
-                <h3 class="h3">Knowledge base</h3>
-                <p>Let customers help themselves with a knowledge base that constantly improves.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p17' }}</h3>
+                <p>{{ dict 'homepage.p18' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
-            <div class="col-sm-6 col-xs-12"><a class="title resolve" href="#"><img src="./images/header/question-icon.svg"><span class="h2">Resolve</span></a><img class="visible-xs mobile-img" src="./images/index/m2.jpg">
+            <div class="col-sm-6 col-xs-12"><a class="title resolve" href="#"><img src="./images/header/question-icon.svg"><span class="h2">用户满意方案</span></a><img class="visible-xs mobile-img" src="./images/index/m2.jpg">
               <div class="detail visible-xs">
-                <h3 class="h3">Help desk</h3>
-                <p class="resolve-para">Manage customer requests for help across all channels and respond faster with a modern help desk.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p19' }}</h3>
+                <p class="resolve-para">{{ dict 'homepage.p20' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
           </div>
@@ -72,16 +85,16 @@
           <div class="row hidden-xs">
             <div class="col-sm-6 col-xs-12">
               <div class="detail">
-                <h3 class="h3">Knowledge base</h3>
-                <p>Let customers help themselves with a knowledge base that constantly improves.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p17' }}</h3>
+                <p>{{ dict 'homepage.p18' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
             <div class="col-sm-6 col-xs-12">
               <div class="detail">
-                <h3 class="h3">Help desk</h3>
-                <p class="resolve-para">Manage customer requests for help across all channels and respond faster with a modern help desk.</p>
-                <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+                <h3 class="h3">{{ dict 'homepage.p19' }}</h3>
+                <p class="resolve-para">{{ dict 'homepage.p20' }}</p>
+                <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
               </div>
             </div>
           </div>
@@ -89,13 +102,13 @@
         <div class="platform">
           <div class="row">
             <div class="platform-brief">
-              <h2 class="h1">The Intercom Platform</h2>
-              <div class="info">All of our products work together in one place, powered by live customer data.</div>
+              <h2 class="h1">{{ dict 'homepage.p21' }}</h2>
+              <div class="info">{{ dict 'homepage.p22' }}</div>
             </div>
             <div class="platform-img"><img src="./images/index/9.png">
               <div class="text-box">
-                <div class="text">See who your customers are<br> and what they do in your app, for free.</div>
-                <div class="more-box"><a class="btn" href="#">Learn More</a><span>FREE FOREVER</span></div>
+                <div class="text">{{ dict 'homepage.p26' }}<br> {{ dict 'homepage.p27' }}</div>
+                <div class="more-box"><a class="btn" href="#">{{ dict 'homepage.p12' }}</a><span>{{ dict 'homepage.p29' }}</span></div>
               </div>
             </div>
           </div>
@@ -103,16 +116,16 @@
       </div>
       <div class="free-trial">
         <div class="trial-form">
-          <h2 class="h1 tx-blue">Start Your Free Trial</h2>
+          <h2 class="h1 tx-blue">{{ dict 'homepage.p23' }}</h2>
           <form actions="">
             <div class="clearfix home-form">
-              <input type="text" name="" placeholder="Enter your emial">
-              <button class="btn btn-primary" type="submit">Get Started</button>
+              <input type="text" name="" placeholder="{{ dict 'homepage.p3' }}">
+              <button class="btn btn-primary" type="submit">{{ dict 'homepage.p4' }}</button>
             </div>
-          </form><span class="form-desc">Easy setup &nbsp;&bullet;&nbsp; Try any products free for 14 days &nbsp;&bullet;&nbsp; Cancel at any time</span>
+          </form><span class="form-desc">{{ dict 'homepage.p5' }} &nbsp;&bullet;&nbsp;{{ dict 'homepage.p6' }}&nbsp;&bullet;&nbsp; {{ dict 'homepage.p7' }}</span>
           <div class="join"> <img src="./images/index/logos.png" width="688">
-            <div class="join-info">15,000 customers and counting. Helping the very best web & mobile businesses communicate with their customers.</div>
-            <div class="more"><a href="#">Learn more</a><span>&nbsp;→</span></div>
+            <div class="join-info">{{ dict 'homepage.p28' }}</div>
+            <div class="more"><a href="#">{{ dict 'homepage.p12' }}</a><span>&nbsp;→</span></div>
           </div>
         </div>
       </div>

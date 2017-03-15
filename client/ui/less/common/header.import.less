@@ -1,6 +1,3 @@
-@import './variable.less';
-@import './media.less';
-
 .site-header {
   position: fixed;
   top: 0;
@@ -106,6 +103,9 @@
       background-color: white;
       padding: 40px;
       box-sizing: border-box;
+      @media (max-width: 1100px) {
+        right: 15px;
+      }
 
       .medium({
         right: 0;
@@ -135,12 +135,14 @@
       width: 55%;
       margin: 0;
       border: 1px solid @light-grey;
+      border-right: none;
       padding: 0 10px;
       font-size: 12px;
       line-height: 28px;
       background-color: #fafbfc;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
+      &.error { border-color: @red; }
     }
 
     button {
@@ -153,6 +155,7 @@
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px;
       padding: 0;
+      outline: none;
     }
   }
 
@@ -288,13 +291,13 @@
     &.open {
       .menu-btn {
         border-color: transparent;
-        &:before {
+        &::before {
           top: 0;
           transform-origin: center center;
           transform: rotateZ(45deg);
         }
 
-        &:after {
+        &::after {
           bottom: auto;
           top: 0;
           transform-origin: center center;
@@ -327,8 +330,8 @@
     position: relative;
     display: inline-block;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       width: 100%;
       border-top: 2px solid @blue;
@@ -336,11 +339,11 @@
 
     }
 
-    &:before {
+    &::before {
       top: -8px;
     }
 
-    &:after {
+    &::after {
       bottom: -6px;
     }
 
